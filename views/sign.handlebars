@@ -1,0 +1,32 @@
+<section class="petition">
+
+    <p class="profilelink"><a href="/" class="exit">Exit</a></p>
+
+    <h1>Sign now for a greener city full of rollerbladers! </h1>
+
+    <p>Aren't you convinced yet? Read
+        <a
+            href="https://jumponwheels.com/11-benefits-of-rollerblading-you-must-know/"
+        >this article</a>
+        about the benefits of skating.</p>
+
+    <form method="POST">
+
+        <canvas
+            id="signaturefield"
+            width="500"
+            height="150"
+            style="border:2px dashed rgb(119, 147, 180);"
+        >
+        </canvas>
+        <input id="hidden" type="hidden" name="signature" required />
+
+        {{{errormessage}}}
+
+        <button>Send Petition</button>
+    </form>
+
+    <button id="clearsignature">Clear Signature</button>
+
+    {{{script}}}
+</section>

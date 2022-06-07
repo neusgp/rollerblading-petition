@@ -1,0 +1,28 @@
+<section class="register">
+
+    <div class="background">
+
+        <h1>Register to sign</h1>
+
+        <form method="POST">
+            <div class="registerfields">
+                <p>First Name * </p>
+                <input type="text" name="first_name" required />
+                <p>Last Name * </p>
+                <input type="text" name="last_name" required />
+                <p>Email * </p>
+                <input type="text" name="email" required />
+                <p>Password * </p>
+                <input type="password" name="password" required />
+            </div>
+
+            {{{errormessage}}}
+
+            <button><p>Register</p></button>
+        </form>
+
+        <p>Do you have an account?</p>
+        <a href="/login">Login</a>
+    </div>
+
+</section>

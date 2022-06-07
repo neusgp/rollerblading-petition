@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("sign.jpg");
+    background-size: cover;
+    background-position-y: -30px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Cormoran", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+.menu {
+    text-decoration: none;
+}
+.profilelink {
+    position: absolute;
+    top: 50px;
+    transform: translate(480px);
+    color: white;
+    font-size: 20px;
+}
+.profilelink a {
+    font-family: "Secular One", sans-serif;
+}
+.profilelink a:visited {
+    color: white;
+}
+
+i {
+    margin-right: 10px;
+    color: white;
+}
+h1 {
+    font-family: "Secular One", sans-serif;
+    color: #334567;
+    margin-top: 200px;
+    width: 700px;
+    text-align: center;
+}
+
+h2 {
+    width: 700px;
+    text-align: center;
+}
+
+img {
+    margin-top: 60px;
+    border: 1px solid #adb1b8;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 180px;
+    position: absolute;
+    top: 480px;
+    transform: translate(70px);
+    background-color: white;
+    border-radius: 50px;
+    border: 3px solid #ff592b;
+    color: #ff592b;
+    font-family: "Secular One", sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ff592b;
+    color: white;
+}
+
+.viewsigners {
+    margin-top: 100px;
+}
+
+footer {
+    height: 36px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 10px;
+}

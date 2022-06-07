@@ -1,0 +1,31 @@
+<section class="signers">
+
+    <p class="profilelink"><i class="fa-solid fa-arrow-left"></i><a
+            href="/thanks"
+            class="menu"
+        >Back</a>
+        |
+        <a href="/" id="logout" class="menu">Logout</a></p>
+
+    <div class="background">
+
+        <h1>Check who else signed our petition:</h1>
+
+        {{#rows}}
+            {{#if url}}
+                <p class="signer"><a href={{url}}>{{first_name}}
+                        {{last_name}}</a>,
+                    {{age}}, from
+                    <a href="/signers/{{city}}">{{city}}</a></p>
+            {{else}}
+                <p class="signer">{{first_name}}
+                    {{last_name}},
+                    {{age}}, from
+                    <a href="/signers/{{city}}">{{city}}</a></p>
+            {{/if}}
+
+        {{/rows}}
+
+    </div>
+
+</section>

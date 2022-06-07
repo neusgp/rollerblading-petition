@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("ciutat.jpg");
+    background-size: cover;
+    background-position-y: -30px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Cormoran", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+h1 {
+    font-family: "Secular One", sans-serif;
+    width: 200px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.loginfields {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.background {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    padding: 50px;
+    width: 400px;
+}
+form {
+    text-align: center;
+}
+input {
+    height: 30px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+button {
+    line-height: 0;
+    text-align: center;
+    height: 60px;
+    width: 160px;
+    margin-top: 40px;
+    background-color: #ffd84e;
+    border-radius: 50px;
+    border: 3px solid #334567;
+    color: #334567;
+    font-family: "Secular One", sans-serif;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a {
+    font-family: "Secular One", sans-serif;
+}
+
+.error {
+    display: block;
+    color: red;
+    margin-top: 30px;
+}

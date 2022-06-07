@@ -1,0 +1,55 @@
+<section class="profile">
+
+    <p class="profilelink"><i class="fa-solid fa-arrow-left"></i><a
+            href="/thanks"
+            class="menu"
+        >Back</a>
+        |
+        <a href="/" id="logout" class="menu">Logout</a></p>
+
+    <div class="background">
+
+        {{#rows}}
+            <h1>{{first_name}}'s Profile</h1>
+
+            <div id="profileinfo">
+                <p>First Name: {{first_name}} </p>
+                <p>Last Name: {{last_name}} </p>
+                <p>Email: {{email}} </p>
+                <p>Password: <i class="fa-solid fa-key"></i></p>
+                <p>Age: {{age}} </p>
+                <p>City: {{city}} </p>
+                <p>Personal url: {{url}} </p>
+                <p>Favourite snack: {{snack}} </p>
+                <button id="edit">Edit Profile</button>
+            </div>
+
+            <form method="POST" id="editprofile" class="hide">
+                <p>First Name: </p>
+                <input type="text" name="first_name" value="{{first_name}}" />
+                <p>Last Name: </p>
+                <input type="text" name="last_name" value="{{last_name}}" />
+                <p>Email: </p>
+                <input type="text" name="email" value="{{email}}" />
+                <p>Password: </p>
+
+                <input type="password" name="password" value="" />
+                <p>Age: </p>
+                <input type="text" name="age" value="{{age}}" />
+                <p>City: </p>
+                <input type="text" name="city" value="{{city}}" />
+                <p>Personal url: </p>
+                <input type="text" name="url" value="{{url}}" />
+                <p>Favourite snack: </p>
+                <input type="text" name="snack" value="{{snack}}" />
+
+                {{{errormessage}}}
+
+                <button id="updateinfo"><p>Update</p></button>
+            </form>
+        {{/rows}}
+    </div>
+    
+    {{{script}}}
+
+</section>

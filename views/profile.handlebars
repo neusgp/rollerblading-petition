@@ -1,0 +1,23 @@
+<section class="profile">
+    <div class="background">
+        <h1>Before we continue, we would like to know more about you,
+            {{name}}!</h1>
+
+        <form method="POST">
+            <div class="profilefields" required>
+                <p>Age * </p>
+                <input type="text" name="age" required />
+                <p>City * </p>
+                <input type="text" name="city" />
+                <p>Personal url </p>
+                <input type="text" name="url" />
+                <p>Favourite snack </p>
+                <input type="text" name="snack" />
+            </div>
+
+            {{{errormessage}}}
+
+            <button><p>Continue</p></button>
+        </form>
+    </div>
+</section>

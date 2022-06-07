@@ -1,0 +1,28 @@
+<section class="thanks">
+
+    <p class="profilelink"><i class="fa-solid fa-house-user"></i><a
+            href="/profile/edit"
+            class="menu"
+        >View Profile</a>
+        |
+        <a href="/" id="logout" class="menu">Logout</a></p>
+
+    <h1>Thanks for supporting our cause,
+        {{name}}!
+    </h1>
+
+    {{#rows}}
+        <img src="{{signature}}" />
+    {{/rows}}
+
+    <form method="POST" class="delete">
+        <button>Delete Signature</button>
+    </form>
+
+    <h2 class="viewsigners">
+        <a href="/signers">View {{signersCount}} signers</a>.
+    </h2>
+
+    <div id="logoutmessage"></div>
+
+</section>

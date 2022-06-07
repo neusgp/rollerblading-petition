@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("sign.jpg");
+    background-size: cover;
+    background-position-y: -30px;
+    min-height: 100vh;
+    margin: 0;
+    font-family: "Cormoran", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.petition {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.profilelink {
+    position: absolute;
+    top: 50px;
+    transform: translate(480px);
+    color: white;
+    font-size: 24px;
+}
+.profilelink a {
+    font-family: "Secular One", sans-serif;
+    text-decoration: none;
+}
+.profilelink a:visited {
+    color: white;
+}
+
+h1 {
+    font-family: "Secular One", sans-serif;
+    color: #334567;
+    margin-top: 200px;
+    width: 700px;
+    text-align: center;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+}
+
+.formcontent {
+    display: inline-block;
+}
+
+.inputfields p {
+    margin-right: 10px;
+}
+
+input {
+    margin-right: 40px;
+    width: 200px;
+}
+
+canvas {
+    margin-top: 100px;
+    border-style: dotted;
+}
+
+#clearsignature {
+    background-color: white;
+    font-size: 14px;
+    margin: 0;
+    position: absolute;
+    top: 360px;
+    transform: translate(200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+}
+
+button {
+    line-height: 0;
+    text-align: center;
+    height: 60px;
+    width: 260px;
+    margin-top: 30px;
+    background-color: #ffd84e;
+    border-radius: 50px;
+    border: 3px solid #334567;
+    color: #334567;
+    font-family: "Secular One", sans-serif;
+    font-size: 26px;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+a {
+    font-family: "Secular One", sans-serif;
+}
+
+footer {
+    height: 36px;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    margin-left: 10px;
+}
+
+.profilelink {
+    position: absolute;
+    top: 50px;
+    transform: translate(400px);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.error {
+    position: relative;
+    display: block;
+    color: red;
+}

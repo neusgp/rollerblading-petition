@@ -1,0 +1,44 @@
+<section class="signers-by-city">
+
+    <p class="profilelink"><i class="fa-solid fa-arrow-left"></i><a
+            href="/signers"
+            class="menu"
+        >Back</a>
+        |
+        <a href="/" id="logout" class="menu">Logout</a></p>
+
+    <div class="text">
+
+        <h1>Get to know the rollerbladers from {{city}}!</h1>
+
+        <p>Get in touch with your fellow citizens and prepare your next route.
+            Don't forget to bring some snacks:
+            <ul>
+            {{#each rows}}
+                <li class="snack">{{snack}},</li>
+            {{/each}}
+            <li>...</li>
+            </ul>
+
+    </div>
+
+    <div class="background">
+
+        {{#rows}}
+            {{#if url}}
+                <p><a href={{url}}>{{first_name}}
+                        {{last_name}}</a>,
+                    {{age}}, from
+                    <a href="/signers/{{city}}">{{city}}</a></p>
+            {{else}}
+                <p>{{first_name}}
+                    {{last_name}},
+                    {{age}}, from
+                    <a href="/signers/:{{city}}">{{city}}</a></p>
+            {{/if}}
+
+        {{/rows}}
+
+    </div>
+
+</section>
